@@ -50,12 +50,12 @@ Please download them from the following Google Drive link:
 
 After downloading:
 
--Place variables file in the models/model_2 directory.
--Place embedding file in models/ directory.
--Ensure their names remain exactly:
+- Place the two variables file in the models/model_2/variables directory.
+- Place embedding file in models/ directory.
+- Ensure their names remain exactly:
 variables
 embedding
--These files are required for running the prediction model and generating replacement suggestions.
+- These files are required for running the prediction model and generating replacement suggestions.
 
 ## Usage Instructions
 
