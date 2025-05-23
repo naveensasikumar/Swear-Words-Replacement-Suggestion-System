@@ -41,6 +41,22 @@ This project proposes a novel profanity detection and replacement system that en
 | Random Forest | 93.4%       | 93.45%      |
 | RNN (LSTM)    | 93.37%      | **94.25%**  |
 
+## Download Required Files:
+Due to GitHub's file size limit, two required files (variables and embedding) are not included in this repository.
+
+Please download them from the following Google Drive link:
+
+ [Download Variables and Embedding Files](https://drive.google.com/drive/folders/1XMKZ896eRKD3mbY1E44zEEiKpthPUaXE?usp=share_link)
+
+After downloading:
+
+-Place variables file in the models/model_2 directory.
+-Place embedding file in models/ directory.
+-Ensure their names remain exactly:
+variables
+embedding
+-These files are required for running the prediction model and generating replacement suggestions.
+
 ## Usage Instructions
 
 ### 1. Clone the Repository
