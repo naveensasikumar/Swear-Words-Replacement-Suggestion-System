@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+    <head>
+      <meta charset="utf-8">
+      <title>Post Review</title>
+      <link rel="stylesheet" type="text/css"
+          href="style.css" />
+          <style type="text/css">
+            body{
+              background-image:url("1.jpg");
+              background-size: cover;
+            }
+          </style>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  <script type="text/javascript">
+      {% autoescape off %}
+      $(document).ready(function () {
+        $(".text").click(function () {
+          $(".overlay").fadeIn(500);
+        });
+        $(".overlay").not(".text").click(function() {
+          $(".overlay").fadeOut(500);
+        });
+        $("[type = submit]").click(function () {
+          var post = $("textarea").val();
+          var e = document.getElementById("category");
+          var cat = e.options[e.selectedIndex].text;
+          if (post && cat.localeCompare("Choose Category")==1) {
+            $("<p class='post'>" + cat +": "+ post +"</p>").appendTo("section");
+          }
+        });
+      });
+      {% endautoescape %}
+    </script> -->
+  </head>
+  <body >
+    <input type="checkbox" id="click">
+    <label for="click">
+      <i class="fab fa-facebook-messenger"> Write Review</i>
+      <i class="fas fa-times"> Close</i>
+    </label>
+    <div class="wrapper">
+      <div class="head-text">Let's Review?</div>
+      <div class="chat-box">
+        <div class="desc-text">Please fill out the review for your item.</div>
+        <form name='myform' action="test.py" method="post" enctype="multipart/form-data"  target="_blank">
+          <div class="field list">
+            <select id="category" name='category'>
+              <option value="">Choose Category</option>
+              <option value="Food_Vegetables">Food & Vegetables</option>
+              <option value="Clothes_Footwear">Clothes & Footwear</option>
+            </select>
+          </div>
+          <div class="field textarea">
+            <textarea cols="30" rows="10" id="text" name="text" placeholder="Explain your queries.." required></textarea>
+          </div>
+          <div class="field">
+            <input type="submit" value="Post">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section></section>
+
+  </body>
+</html>
